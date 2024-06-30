@@ -7,7 +7,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Building", menuName = "ScriptableObjects/Building", order = 0)]
 public class Building : ScriptableObject
 {
-    public static float costIncreaseMultiplier = 1.15f;
+    // A bit lower than Cookie Clicker
+    public float costIncreaseMultiplier = 1.13f;
     public string buildingName;
     // Track everything internally as floats, but only display as ints.
     public float baseCost;

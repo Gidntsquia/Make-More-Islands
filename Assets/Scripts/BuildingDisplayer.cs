@@ -14,8 +14,6 @@ public class BuildingDisplayer : MonoBehaviour
     public TMP_Text dpsPerDirtField;
     public Button buyButton;
 
-    public GameObject allChildren;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +31,17 @@ public class BuildingDisplayer : MonoBehaviour
     {
         costField.text = ((int)building.cost).ToString() + " dirt";
         countField.text = building.count.ToString();
-        dpsField.text = ((int)building.dirtPerSecond).ToString() + " dps";
-        dpsPerDirtField.text = roundToHundreths(building.GetDPSPerDirt()).ToString() + " dps / dirt";
+
+        if (dpsField != null)
+        {
+
+            dpsField.text = ((int)building.dirtPerSecond).ToString() + " dps";
+        }
+        if (dpsPerDirtField != null)
+        {
+
+            dpsPerDirtField.text = roundToHundreths(building.GetDPSPerDirt()).ToString() + " dps / dirt";
+        }
     }
 
     // Rounds a float to the nearest hundreth
