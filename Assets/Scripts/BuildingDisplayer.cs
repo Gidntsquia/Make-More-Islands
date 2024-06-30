@@ -47,4 +47,6 @@ public class BuildingDisplayer : MonoBehaviour
         building.myDataHasUpdated -= UpdateBuildingData;
 
     }
+
+
 }
