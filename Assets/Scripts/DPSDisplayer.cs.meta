@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: f8b3b5f3d95b04f898278a5e7c144668
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}
+  - dpsTextField: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
