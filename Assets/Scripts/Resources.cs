@@ -16,12 +16,14 @@ public class Resources : ScriptableObject
     [SerializedDictionary("Building", "DirtPerSecond")]
     public SerializedDictionary<Building, float> buildings = new SerializedDictionary<Building, float>();
     public event Action DPSUpdated;
+    public event Action ShowAnotheZonerRequest;
 
     public void AddDirt(int dirtToAdd) { dirt += dirtToAdd; }
 
     [Button]
     public void Add1Dirt() { AddDirt(1); }
 
+    [Button]
     public void UpdateDPS()
     {
         // Update dirt per second from all the buildings, and update the 
@@ -30,12 +32,20 @@ public class Resources : ScriptableObject
         DPSUpdated?.Invoke();
     }
 
+    [Button]
+    public void ShowAnotherZone()
+    {
+        ShowAnotheZonerRequest?.Invoke();
+    }
+
 
 
     // Re-import all buildings on start
     private void OnEnable()
     {
-        UpdateDPS();
+        dirtPerSecond = 0;
+        // dirt = 0;
+
 #if UNITY_EDITOR
 
         // Code adapted from StackOverflow answer by Jack Mariani

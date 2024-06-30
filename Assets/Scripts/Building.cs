@@ -34,10 +34,12 @@ public class Building : ScriptableObject
     [Button]
     public void BuyOne()
     {
+        resources.dirt -= cost;
         count += 1;
         cost = cost * costIncreaseMultiplier;
         UpdateDPSContribution();
         myDataHasUpdated?.Invoke();
+
 
 
     }

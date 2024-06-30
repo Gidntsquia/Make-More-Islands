@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class BuildingDisplayer : MonoBehaviour
 {
-
     public Building building;
     public TMP_Text nameField;
     public TMP_Text costField;
@@ -14,6 +13,8 @@ public class BuildingDisplayer : MonoBehaviour
     public TMP_Text dpsField;
     public TMP_Text dpsPerDirtField;
     public Button buyButton;
+
+    public GameObject allChildren;
 
     // Start is called before the first frame update
     void Start()
