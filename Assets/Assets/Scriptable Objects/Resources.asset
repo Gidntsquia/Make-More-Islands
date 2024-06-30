@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60388dd13ea8240d783de58c3e722774, type: 3}
   m_Name: Resources
   m_EditorClassIdentifier: 
-  dirt: 17937.12
-  dirtPerSecond: 840
+  dirt: 346.35913
+  dirtPerSecond: 37
   buildings:
     _serializedList:
+    - Key: {fileID: 11400000, guid: 451ccebad541b468ba47fe4fa761c583, type: 2}
+      Value: 7
     - Key: {fileID: 11400000, guid: 99aea8f1a8e1e491f9a216adebf7cb35, type: 2}
-      Value: 840
+      Value: 20
     - Key: {fileID: 11400000, guid: 19f55739aef97477487723fb580129c6, type: 2}
+      Value: 10
+    - Key: {fileID: 11400000, guid: 04a003f4a1c3b4679a560ae0810fcdb7, type: 2}
       Value: 0
