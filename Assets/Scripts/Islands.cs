@@ -10,7 +10,7 @@ public class Islands : ScriptableObject
     public float baseCost = 10f;
     public float costIncreaseMultiplier = 1.1f;
 
-    public float count;
+    public int count;
     public float cost;
 
     public Action myDataHasUpdated;

@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d874dbca89c345a4af5a793141e0778, type: 3}
-  m_Name: Islands
+  m_Script: {fileID: 11500000, guid: 576a32b49e3304a51a9ccdf5abb1e114, type: 3}
+  m_Name: LocalCatSnatcher
   m_EditorClassIdentifier: 
-  baseCost: 10
-  costIncreaseMultiplier: 1.1
-  count: 0
-  cost: 10
-  resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}
+  cronieName: Local Cat Snatcher
+  count: 2
+  quote: Even I have more islands than Him? Ha!
+  image: {fileID: 21300000, guid: bacba468143594e63a9e55dd2b3cc407, type: 3}
