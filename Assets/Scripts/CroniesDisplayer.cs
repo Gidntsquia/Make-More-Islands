@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
+using NaughtyAttributes;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,15 +18,29 @@ public class CroniesDisplayer : MonoBehaviour
 
     public int currIslandMark = 0;
 
+    public AllBuildings allBuildings;
+    public Upgrade upgradeToApply;
+    public GameObject endScreen;
+
 
     private void Start()
     {
         ShowNextCronie();
         islands.myDataHasUpdated += CheckIfCronieIsBeaten;
+        endScreen.SetActive(false);
     }
 
+    [Button]
     public void ShowNextCronie()
     {
+        if (nextCronieToShow >= allCronies.Count)
+        {
+            // End the game
+            endScreen.SetActive(true);
+            Time.timeScale = 0;
+            return;
+
+        }
         Cronie nextCronie = allCronies[nextCronieToShow];
         nameField.text = nextCronie.cronieName + "'s Islands:";
         countField.text = nextCronie.count.ToString();
@@ -33,7 +49,11 @@ public class CroniesDisplayer : MonoBehaviour
 
         currIslandMark = nextCronie.count;
 
+
+
         nextCronieToShow += 1;
+
+
 
 
     }
@@ -43,10 +63,13 @@ public class CroniesDisplayer : MonoBehaviour
     {
         if (islands.count > currIslandMark)
         {
+            string logText = "";
+
+            logText += "Beat " + allCronies[nextCronieToShow - 1].cronieName + "!\n1.5x boost!";
+            allBuildings.ApplyUprade(upgradeToApply, logText);
             // Cronie is beaten
             // TODO: Play some sort of animation
             // TODO: Give some global buff
-
             ShowNextCronie();
 
         }

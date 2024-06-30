@@ -35,12 +35,12 @@ public class BuildingDisplayer : MonoBehaviour
         if (dpsField != null)
         {
 
-            dpsField.text = ((int)building.dirtPerSecond).ToString() + " dps";
+            dpsField.text = ((int)building.dirtPerSecond * building.dirtPerSecondMultiplier).ToString() + " dirt/sec";
         }
         if (dpsPerDirtField != null)
         {
 
-            dpsPerDirtField.text = roundToHundreths(building.GetDPSPerDirt()).ToString() + " dps / dirt";
+            dpsPerDirtField.text = "Efficiency: " + roundToHundreths(building.GetDPSPerDirt()).ToString();
         }
     }
 

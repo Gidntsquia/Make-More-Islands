@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331722f163e27408cba3ab8157c867fb, type: 3}
   m_Name: Dirt Merchant
   m_EditorClassIdentifier: 
+  costIncreaseMultiplier: 1.13
   buildingName: Dirt Merchant
-  baseCost: 100
-  baseDirtPerSecond: 10
+  baseCost: 480
+  baseDirtPerSecond: 90
   count: 0
-  cost: 100
-  dirtPerSecond: 10
+  cost: 60
+  dirtPerSecond: 8
   dirtPerSecondMultiplier: 1
   resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}

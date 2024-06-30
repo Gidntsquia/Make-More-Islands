@@ -7,8 +7,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Islands", menuName = "ScriptableObjects/Islands", order = 0)]
 public class Islands : ScriptableObject
 {
-    public float baseCost = 10f;
-    public float costIncreaseMultiplier = 1.1f;
+    public float baseCost = 5f;
+    public float costIncreaseMultiplier = 1.25f;
 
     public int count;
     public float cost;

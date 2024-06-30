@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331722f163e27408cba3ab8157c867fb, type: 3}
   m_Name: Dirt Farmer
   m_EditorClassIdentifier: 
+  costIncreaseMultiplier: 1.13
   buildingName: Dirt Farmer
-  baseCost: 10
-  baseDirtPerSecond: 1
-  count: 7
-  cost: 26.600193
+  baseCost: 60
+  baseDirtPerSecond: 8
+  count: 0
+  cost: 10
   dirtPerSecond: 1
   dirtPerSecondMultiplier: 1
   resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}

@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d9926888f8614bf2a75248f566cf4a5, type: 3}
+  m_Name: SatanQuotes
+  m_EditorClassIdentifier: 
+  quotes:
+  - You stink!
+  - You're washed!
+  - 'Too ez '
+  - You'll never have more islands than me
+  - Impressive... NOT!
+  - You don't have it in you!
+  - Blah blah blah! Did that distract you?
+  - You're bad!
+  - Hehehehehe. You'll never have more than me!
+  - You're island count is lacking!
+  - I have more islands than you! I have more islands than you!
+  - You smell!
+  - I fart in your general direction!
+  - You don't even know what islands are, old man!
+  - I thought God was supposed to be good at these things... obviously you're not!
+  - Come back to me when you have some islands
+  - My cronies even have more islands than you!
+  - You are getting a few islands now... I'm not worried, though! You stink!
+  - Take a rest day-- you'll never have as many islands as me
+  - Once they see how many islands I have, they'll start praying to me!
+  - Oh my devil! You're really trying to get more islands? It'll never work!
+  - You think you can challenge me?
+  - 'You should quit before you get crushed.
+
+'
+  - Don't make me laugh.
+  - Get lost
+  - Your persistence is cute
+  - To me, you're just a bug
+  - You're going to lose by a landslide
+  - Beating you will be simple
+  - You've done enough, it's time to stop.
+  - 'You''re making me angry! '
+  - 'You''ll never have more islands than me! '
+  - Stop it!
+  - You can't catch up!
+  - I will make you sorry
+  - 'Give up! '
+  - 'I have so many islands. 200! 200 whole islands! '
+  - I don't know why I'm wasting my very important time on you
+  - I am the best! I'll always be better than you.
+  - 'My islands are the best! They''ll always be better than yours. '
+  - 'Get destroyed! '
+  - Your mother likes my islands more than you
+  - I'm winning! I'm the dirtiest dirt boy!
+  - You're a loser
+  - You're a baby
+  - I will reign supreme forever!
+  - Mwuahahaha
+  - I have more islands than youuuu
+  - Take the L
+  - I'm winning and you're not
+  - You're getting decimated!
+  - "This isn't even hard \U0001F971"
+  - You call this a fight? Haha
+  - 'Don''t go easy on me! '
+  - Oh, is that the best you can do?
+  - Easy W
+  - You only have that much dirt?
+  - You're trash
+  - Yawn. What a snoozefest
+  - You're going down
+  - Don't get your hopes up

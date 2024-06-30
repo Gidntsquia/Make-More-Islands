@@ -25,7 +25,7 @@ public class ZoneDisplayer : MonoBehaviour
 
         // Ensure there are always two being shown.
         ShowNextBuildingZone();
-        ShowNextBuildingZone();
+        // ShowNextBuildingZone();
 
         resources.ShowAnotheZonerRequest += ShowNextBuildingZone;
     }

@@ -18,7 +18,7 @@ public class Resources : ScriptableObject
     public event Action DPSUpdated;
     public event Action ShowAnotheZonerRequest;
 
-    public void AddDirt(int dirtToAdd) { dirt += dirtToAdd; }
+    public void AddDirt(float dirtToAdd) { dirt += dirtToAdd; }
 
     [Button]
     public void Add1Dirt() { AddDirt(1); }
@@ -44,7 +44,7 @@ public class Resources : ScriptableObject
     private void OnEnable()
     {
         dirtPerSecond = 0;
-        // dirt = 0;
+        dirt = 0;
 
 #if UNITY_EDITOR
 

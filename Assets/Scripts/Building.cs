@@ -47,19 +47,20 @@ public class Building : ScriptableObject
 
     public float GetDPSContribution()
     {
-        return dirtPerSecond * count;
+        return dirtPerSecond * count * dirtPerSecondMultiplier;
     }
 
     public float GetDPSPerDirt()
     {
         // Cover for div by 0 edge case
-        return cost != 0 ? dirtPerSecond / cost : Mathf.Infinity;
+        return cost != 0 ? (dirtPerSecond * dirtPerSecondMultiplier) / cost : Mathf.Infinity;
     }
 
     public void StackDPSMultipler(float multiplierToStack)
     {
         dirtPerSecondMultiplier *= multiplierToStack;
         UpdateDPSContribution();
+        myDataHasUpdated?.Invoke();
     }
 
     public void UpdateDPSContribution()

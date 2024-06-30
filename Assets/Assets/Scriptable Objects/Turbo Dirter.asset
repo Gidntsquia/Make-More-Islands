@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331722f163e27408cba3ab8157c867fb, type: 3}
   m_Name: Turbo Dirter
   m_EditorClassIdentifier: 
-  buildingName: Turbo Diter
-  baseCost: 1000000
-  baseDirtPerSecond: 10231414
+  costIncreaseMultiplier: 1.13
+  buildingName: Turbo Dirter
+  baseCost: 1e+12
+  baseDirtPerSecond: 1e+12
   count: 0
-  cost: 1000000
-  dirtPerSecond: 10231414
+  cost: 1e+12
+  dirtPerSecond: 1e+12
   dirtPerSecondMultiplier: 1
   resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}
