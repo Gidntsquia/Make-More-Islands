@@ -3,6 +3,7 @@
 // A zone is a building zone -- where you can buy things like Dirt Farmers.
 
 using System.Collections.Generic;
+using System.Runtime.ExceptionServices;
 using UnityEngine;
 
 public class ZoneDisplayer : MonoBehaviour
@@ -10,6 +11,8 @@ public class ZoneDisplayer : MonoBehaviour
     public Resources resources;
     public List<GameObject> allZones = new List<GameObject>();
     public int nextZoneToShow = 0;
+    public bool isFirstClick = true;
+
 
 
     // Start is called before the first frame update
@@ -19,16 +22,38 @@ public class ZoneDisplayer : MonoBehaviour
         foreach (Transform zone in transform)
         {
             allZones.Add(zone.gameObject);
+
+        }
+
+        foreach (GameObject zone in allZones)
+        {
             zone.gameObject.SetActive(false);
         }
 
-
-        // Ensure there are always two being shown.
-        ShowNextBuildingZone();
+        // ShowNextBuildingZone();
         // ShowNextBuildingZone();
 
         resources.ShowAnotheZonerRequest += ShowNextBuildingZone;
     }
+
+    private void Update()
+    {
+        if (isFirstClick && Input.GetMouseButtonDown(0))
+        {
+            isFirstClick = false;
+            ShowNextBuildingZone();
+        }
+        else if (nextZoneToShow == 1 && resources.dirt >= 10)
+        {
+            ShowNextBuildingZone();
+        }
+        // else if (nextZoneToShow == 3 && resources.dirt >= 10)
+        // {
+        //     ShowNextBuildingZone();
+        // }
+    }
+
+
 
 
 

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d874dbca89c345a4af5a793141e0778, type: 3}
   m_Name: Islands
   m_EditorClassIdentifier: 
-  baseCost: 10
-  costIncreaseMultiplier: 1.1
-  count: 0
-  cost: 10
+  baseCost: 20
+  costIncreaseMultiplier: 1.13
+  count: 2
+  cost: 33.9
   resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}
+  isFirstPurchase: 1

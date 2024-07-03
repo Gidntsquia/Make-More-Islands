@@ -45,7 +45,7 @@ public class IslandsDisplayer : MonoBehaviour
 
             if (isFirstTimeBuyable)
             {
-                resources.ShowAnotherZone();
+                // resources.ShowAnotherZone();
                 isFirstTimeBuyable = false;
             }
 

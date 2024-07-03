@@ -445,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9dd4f721adb04cbe979edbb1df65c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  building: {fileID: 11400000, guid: 19f55739aef97477487723fb580129c6, type: 2}
+  building: {fileID: 11400000, guid: 75aa331d20f414592819b5e1d557e045, type: 2}
   nameField: {fileID: 3720217550219564431}
   costField: {fileID: 1661699781301159750}
   countField: {fileID: 4496368845012281078}
@@ -1193,9 +1193,9 @@ MonoBehaviour:
   m_fontSize: 19
   m_fontSizeBase: 19
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 1
-  m_fontSizeMax: 50
+  m_fontSizeMax: 19
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512

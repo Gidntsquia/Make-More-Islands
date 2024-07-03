@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   costIncreaseMultiplier: 1.13
   buildingName: Dirt Astronaut
-  baseCost: 756000
-  baseDirtPerSecond: 154000
+  baseCost: 18548000
+  baseDirtPerSecond: 5232000
   count: 0
-  cost: 63000
-  dirtPerSecond: 12600
+  cost: 6048000
+  dirtPerSecond: 1232000
   dirtPerSecondMultiplier: 1
   resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}

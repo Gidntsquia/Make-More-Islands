@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   costIncreaseMultiplier: 1.13
   buildingName: Dirt Magician
-  baseCost: 5400
-  baseDirtPerSecond: 1050
+  baseCost: 12800
+  baseDirtPerSecond: 2100
   count: 0
-  cost: 480
-  dirtPerSecond: 90
+  cost: 10800
+  dirtPerSecond: 2550
   dirtPerSecondMultiplier: 1
   resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}

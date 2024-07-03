@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   costIncreaseMultiplier: 1.13
   buildingName: Dirt Being
-  baseCost: 294800000
-  baseDirtPerSecond: 554400000
+  baseCost: 1.14336e+10
+  baseDirtPerSecond: 7.77408e+10
   count: 0
-  cost: 0
-  dirtPerSecond: 0
-  dirtPerSecondMultiplier: 0
+  cost: 9.4336e+9
+  dirtPerSecond: 3.77408e+10
+  dirtPerSecondMultiplier: 1
   resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}

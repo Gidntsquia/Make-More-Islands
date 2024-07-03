@@ -44,7 +44,7 @@ public class Resources : ScriptableObject
     private void OnEnable()
     {
         dirtPerSecond = 0;
-        dirt = 0;
+        dirt = 1;
 
 #if UNITY_EDITOR
 

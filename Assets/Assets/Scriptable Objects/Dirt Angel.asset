@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   costIncreaseMultiplier: 1.13
   buildingName: Dirt Angel
-  baseCost: 43400000
-  baseDirtPerSecond: 9240000
+  baseCost: 999400000
+  baseDirtPerSecond: 247840000
   count: 0
-  cost: 756000
-  dirtPerSecond: 154000
+  cost: 694400000
+  dirtPerSecond: 147840000
   dirtPerSecondMultiplier: 1
   resources: {fileID: 11400000, guid: 12026aed90d36420880cd546c090ca2d, type: 2}

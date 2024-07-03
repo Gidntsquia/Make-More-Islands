@@ -17,11 +17,13 @@ public class SatanQuoteManager : MonoBehaviour
 
     public IEnumerator loopThroughQuotes()
     {
+        print("Starign ienumertaor");
         while (true)
         {
+            yield return new WaitForSeconds(timeToWait);
             int randIndex = Random.Range(0, satanQuotes.quotes.Count - 1);
             sataQuoteField.text = "\"" + satanQuotes.quotes[randIndex] + "\" -";
-            yield return new WaitForSeconds(timeToWait);
+            print("change satan quote");
         }
     }
 
