@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-
 [CreateAssetMenu(fileName = "AllBuildings", menuName = "ScriptableObjects/AllBuildings", order = 0)]
 public class AllBuildings : ScriptableObject
 {
@@ -19,7 +18,10 @@ public class AllBuildings : ScriptableObject
         foreach (Building building in allBuildings)
         {
             // If no buildings selected, apply to all
-            if (upgrade.buildingsToApplyTo.Count == 0 || upgrade.buildingsToApplyTo.Contains(building))
+            if (
+                upgrade.buildingsToApplyTo.Count == 0
+                || upgrade.buildingsToApplyTo.Contains(building)
+            )
             {
                 building.StackDPSMultipler(upgrade.multiplier);
             }
@@ -32,5 +34,4 @@ public class AllBuildings : ScriptableObject
     {
         allBuildings = resources.buildings.Keys.ToList();
     }
-
 }

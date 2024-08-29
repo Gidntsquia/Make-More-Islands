@@ -5,11 +5,10 @@ public class Cronie : ScriptableObject
 {
     public string cronieName;
     public int count;
+
     [TextArea]
     public string quote;
     public Sprite image;
 
     // Need to check when player has more islands than me
-
-
 }

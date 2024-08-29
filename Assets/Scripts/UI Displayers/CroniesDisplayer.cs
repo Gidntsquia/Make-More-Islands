@@ -22,7 +22,6 @@ public class CroniesDisplayer : MonoBehaviour
     public Upgrade upgradeToApply;
     public GameObject endScreen;
 
-
     private void Start()
     {
         ShowNextCronie();
@@ -39,7 +38,6 @@ public class CroniesDisplayer : MonoBehaviour
             endScreen.SetActive(true);
             Time.timeScale = 0;
             return;
-
         }
         Cronie nextCronie = allCronies[nextCronieToShow];
         nameField.text = nextCronie.cronieName + "'s Islands:";
@@ -49,15 +47,8 @@ public class CroniesDisplayer : MonoBehaviour
 
         currIslandMark = nextCronie.count;
 
-
-
         nextCronieToShow += 1;
-
-
-
-
     }
-
 
     public void CheckIfCronieIsBeaten()
     {
@@ -71,7 +62,6 @@ public class CroniesDisplayer : MonoBehaviour
             // TODO: Play some sort of animation
             // TODO: Give some global buff
             ShowNextCronie();
-
         }
     }
 
@@ -79,6 +69,4 @@ public class CroniesDisplayer : MonoBehaviour
     {
         islands.myDataHasUpdated -= CheckIfCronieIsBeaten;
     }
-
-
 }

@@ -13,7 +13,6 @@ public class IslandsDisplayer : MonoBehaviour
     public Button buyButton;
     public bool isFirstTimeBuyable = true;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +21,7 @@ public class IslandsDisplayer : MonoBehaviour
         buyButton.gameObject.SetActive(false);
 
         islands.myDataHasUpdated += UpdateIslandData;
-
     }
-
 
     void UpdateIslandData()
     {
@@ -32,11 +29,9 @@ public class IslandsDisplayer : MonoBehaviour
         countField.text = "Islands\n" + islands.count.ToString();
     }
 
-
     // Update is called once per frame
     void Update()
     {
-
         // TODO: Make this an animation
         if (islands.cost <= resources.dirt)
         {
@@ -48,7 +43,6 @@ public class IslandsDisplayer : MonoBehaviour
                 // resources.ShowAnotherZone();
                 isFirstTimeBuyable = false;
             }
-
         }
         else
         {
@@ -56,12 +50,8 @@ public class IslandsDisplayer : MonoBehaviour
         }
     }
 
-
     private void OnDestroy()
     {
         islands.myDataHasUpdated -= UpdateIslandData;
     }
-
-
-
 }

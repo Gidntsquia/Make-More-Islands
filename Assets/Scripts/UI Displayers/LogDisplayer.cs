@@ -14,7 +14,6 @@ public class LogDisplayer : MonoBehaviour
     {
         logField.text = "";
         allBuildings.upgradeApplied += AddToLogField;
-
     }
 
     public void AddToLogField(string stringToAdd)
@@ -26,6 +25,4 @@ public class LogDisplayer : MonoBehaviour
     {
         allBuildings.upgradeApplied -= AddToLogField;
     }
-
-
 }

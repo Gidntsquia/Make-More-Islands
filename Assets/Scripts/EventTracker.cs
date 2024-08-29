@@ -23,7 +23,6 @@ public class EventTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         // TODO: Make this an animation
         if (building.cost <= resources.dirt)
         {
@@ -35,13 +34,10 @@ public class EventTracker : MonoBehaviour
                 resources.ShowAnotherZone();
                 isFirstTimeBuyable = false;
             }
-
         }
         else
         {
             buyButton.gameObject.SetActive(false);
         }
     }
-
-
 }

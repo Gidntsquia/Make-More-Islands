@@ -24,12 +24,20 @@ public class ClickTracker : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             // createDirtButton.animationTriggers.pressedTrigger = "true";
-            createDirtButton.OnPointerDown(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+            createDirtButton.OnPointerDown(
+                new UnityEngine.EventSystems.PointerEventData(
+                    UnityEngine.EventSystems.EventSystem.current
+                )
+            );
             Click();
         }
         else
         {
-            createDirtButton.OnPointerUp(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+            createDirtButton.OnPointerUp(
+                new UnityEngine.EventSystems.PointerEventData(
+                    UnityEngine.EventSystems.EventSystem.current
+                )
+            );
             createDirtButton.animationTriggers.pressedTrigger = "false";
         }
     }
@@ -47,7 +55,7 @@ public class ClickTracker : MonoBehaviour
         }
         else if (totalClicks == 500)
         {
-            // TODO: Put achievement here 
+            // TODO: Put achievement here
             print("500 click achievement");
         }
     }

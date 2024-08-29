@@ -26,5 +26,4 @@ public class SatanQuoteManager : MonoBehaviour
             print("change satan quote");
         }
     }
-
 }

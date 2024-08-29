@@ -10,6 +10,7 @@ public class Building : ScriptableObject
     // A bit lower than Cookie Clicker
     public float costIncreaseMultiplier = 1.13f;
     public string buildingName;
+
     // Track everything internally as floats, but only display as ints.
     public float baseCost;
     public float baseDirtPerSecond;
@@ -19,8 +20,6 @@ public class Building : ScriptableObject
     public float dirtPerSecond;
     public float dirtPerSecondMultiplier;
     public Action myDataHasUpdated;
-
-
 
     public Resources resources;
 
@@ -40,9 +39,6 @@ public class Building : ScriptableObject
         cost = cost * costIncreaseMultiplier;
         UpdateDPSContribution();
         myDataHasUpdated?.Invoke();
-
-
-
     }
 
     public float GetDPSContribution()
@@ -67,10 +63,5 @@ public class Building : ScriptableObject
     {
         resources.buildings[this] = GetDPSContribution();
         resources.UpdateDPS();
-
     }
-
-
-
-
 }

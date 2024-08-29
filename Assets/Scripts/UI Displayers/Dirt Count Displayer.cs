@@ -19,6 +19,4 @@ public class DirtCountDisplayer : MonoBehaviour
         resources.dirt += resources.dirtPerSecond * Time.deltaTime;
         DisplayDirt();
     }
-
-
 }

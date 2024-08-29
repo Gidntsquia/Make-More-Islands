@@ -36,13 +36,14 @@ public class BuildingDisplayer : MonoBehaviour
 
         if (dpsField != null)
         {
-
-            dpsField.text = ((int)building.dirtPerSecond * building.dirtPerSecondMultiplier).ToString() + " dirt/sec";
+            dpsField.text =
+                ((int)building.dirtPerSecond * building.dirtPerSecondMultiplier).ToString()
+                + " dirt/sec";
         }
         if (dpsPerDirtField != null)
         {
-
-            dpsPerDirtField.text = "Efficiency: " + roundToHundreths(building.GetDPSPerDirt()).ToString();
+            dpsPerDirtField.text =
+                "Efficiency: " + roundToHundreths(building.GetDPSPerDirt()).ToString();
         }
     }
 
@@ -55,8 +56,5 @@ public class BuildingDisplayer : MonoBehaviour
     private void OnDestroy()
     {
         building.myDataHasUpdated -= UpdateBuildingData;
-
     }
-
-
 }

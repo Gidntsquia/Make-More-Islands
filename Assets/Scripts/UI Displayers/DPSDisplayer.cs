@@ -22,8 +22,5 @@ public class DPSDisplayer : MonoBehaviour
     private void OnDestroy()
     {
         resources.DPSUpdated -= DisplayDPS;
-
     }
-
-
 }

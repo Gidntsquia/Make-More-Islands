@@ -48,18 +48,9 @@ public class Islands : ScriptableObject
         }
         else
         {
-
             cost = cost * costIncreaseMultiplier;
         }
         count += 1;
         myDataHasUpdated?.Invoke();
     }
-
-
-
-
-
-
-
-
 }
