@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e179833f0eaac41c0be2f680666ed62b, type: 3}
-  m_Name: SimpleUpgrade
+  m_Name: 2xDirtFarmer
   m_EditorClassIdentifier: 
-  multiplier: 1.5
-  buildingsToApplyTo: []
+  multiplier: 2
+  buildingsToApplyTo:
+  - {fileID: 11400000, guid: 451ccebad541b468ba47fe4fa761c583, type: 2}
+  image: {fileID: 0}
+  description: Make those dirt farmers work a little harder!
   logText: 
