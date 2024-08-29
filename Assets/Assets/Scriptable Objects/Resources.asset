@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60388dd13ea8240d783de58c3e722774, type: 3}
   m_Name: Resources
   m_EditorClassIdentifier: 
-  dirt: 1
-  dirtPerSecond: 0
+  dirt: 24744570
+  dirtPerSecond: 1886247
   buildings:
     _serializedList:
     - Key: {fileID: 11400000, guid: edbd2ecb2b2284b0fb72a09c6c965dd8, type: 2}

@@ -1,11 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using AYellowpaper.SerializedCollections;
 using NaughtyAttributes;
 using UnityEngine;
-using AYellowpaper.SerializedCollections;
-using System;
-using System.Linq;
-
 
 [CreateAssetMenu(fileName = "Resources", menuName = "ScriptableObjects/Resources", order = 0)]
 public class Resources : ScriptableObject
@@ -14,19 +13,26 @@ public class Resources : ScriptableObject
     public float dirtPerSecond = 0f;
 
     [SerializedDictionary("Building", "DirtPerSecond")]
-    public SerializedDictionary<Building, float> buildings = new SerializedDictionary<Building, float>();
+    public SerializedDictionary<Building, float> buildings =
+        new SerializedDictionary<Building, float>();
     public event Action DPSUpdated;
     public event Action ShowAnotheZonerRequest;
 
-    public void AddDirt(float dirtToAdd) { dirt += dirtToAdd; }
+    public void AddDirt(float dirtToAdd)
+    {
+        dirt += dirtToAdd;
+    }
 
     [Button]
-    public void Add1Dirt() { AddDirt(1); }
+    public void Add1Dirt()
+    {
+        AddDirt(1);
+    }
 
     [Button]
     public void UpdateDPS()
     {
-        // Update dirt per second from all the buildings, and update the 
+        // Update dirt per second from all the buildings, and update the
         // DPS displayer
         dirtPerSecond = buildings.Values.Sum();
         DPSUpdated?.Invoke();
@@ -38,13 +44,12 @@ public class Resources : ScriptableObject
         ShowAnotheZonerRequest?.Invoke();
     }
 
-
-
     // Re-import all buildings on start
     private void OnEnable()
     {
-        dirtPerSecond = 0;
-        dirt = 1;
+        // Reset values on start
+        // dirtPerSecond = 0;
+        // dirt = 1;
 
 #if UNITY_EDITOR
 
@@ -55,7 +60,10 @@ public class Resources : ScriptableObject
         buildings.Clear();
 
         // Find all buildings in Scriptable Objects folder
-        string[] assetNames = UnityEditor.AssetDatabase.FindAssets("t:Building", new[] { "Assets/Assets/Scriptable Objects" });
+        string[] assetNames = UnityEditor.AssetDatabase.FindAssets(
+            "t:Building",
+            new[] { "Assets/Assets/Scriptable Objects" }
+        );
 
         // Go through each building we found and add it to the building map.
         foreach (string SOName in assetNames)
@@ -68,8 +76,4 @@ public class Resources : ScriptableObject
         }
 #endif
     }
-
-
-
-
 }
