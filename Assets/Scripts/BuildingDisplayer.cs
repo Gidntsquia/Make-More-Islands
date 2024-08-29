@@ -1,5 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+// Code written by Jaxon Lee
+//
+// Updates building UI in accordance with the building scriptable object
+
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
